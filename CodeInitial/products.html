@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Jhosim Alejandro Agudelo Campo -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Produits</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/scripts/products.js"></script>
+  <script src="./assets/scripts/header.js"></script>
+  
+</head>
+
+<body>
+  <!-- TODO -->
+ <header>
+
+  <div class="contenu">
+    <a  href="index.html"><img src="assets/img/logo.svg" alt="Logo" ></a>
+   <nav>
+     <ul>
+        <li><a href="./index.html">Accueil</a></li>
+       <li class="active"><a href="./products.html">Produits</a></li>
+       <li><a href="./contact.html">Contact</a></li>
+       <li><a href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+               <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+               <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span> 
+            <span class="count"></span>
+         </a>
+       </li>
+     </ul>
+   </nav>
+  </div>
+ </header>
+
+  <main class="contenu">
+   <article class="separation">
+     <aside>
+
+        <h5>Catégories</h5>
+        <div id="product-categories" class="test">
+          <button onclick="myFunction('cameras')">Appareils photo</button><br>
+          <button onclick="myFunction('consoles')">Consoles</button><br>
+          <button onclick="myFunction('screens')">Écrans</button><br>
+          <button onclick="myFunction('computers')">Ordinateurs</button><br>
+          <button class="selected" onclick="myFunction('null')">Tous les produits</button>
+        </div>
+        <div id="productcriteria" class = "test2">
+          <h5>Classement</h5>
+          <button class="selected" onclick="classement('bh')">Prix (bas-haut) </button><br>
+          <button onclick="classement('hb')">Prix (haut-bas) </button><br>
+          <button onclick="classement('az')">Nom (A-Z)</button><br>
+          <button onclick="classement('za')">Nom (Z-A)</button><br>
+        </div>
+     </aside>
+      <section class="principal">
+          <h3>Produits</h3> 
+          <p id="products-count"></p>
+
+
+
+      </section>
+    </article>
+   
+
+
+  </main>
+ 
+ 
+ 
+
+ <footer>
+  <p>Agudelo Campo Alejandro Jhosim 20252200</p>
+ </footer>
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- Jhosim Alejandro Agudelo Campo -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>OnlineShop - Commande</title>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/localization/messages_fr.min.js"></script>
+  <script src="./assets/scripts/order.js"></script>
+  <script src="./assets/scripts/header.js"></script>
+
+</head>
+
+<body>
+ <!-- TODO -->
+ <header>
+
+  <div class="contenu">
+    <a href="index.html"><img src="assets/img/logo.svg" alt="Logo" ></a>
+   <nav>
+     <ul>
+        <li><a href="./index.html">Accueil</a></li>
+       <li><a href="./products.html">Produits</a></li>
+       <li><a href="./contact.html">Contact</a></li>
+       <li><a href="./shopping-cart.html" title="Panier">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+               <i class="fa fa-shopping-cart fa-stack-1x"></i>
+            </span> 
+            <span class="count"></span>
+         </a>
+       </li>
+     </ul>
+   </nav>
+  </div>
+ </header>
+
+ <main class="contenu" >
+  <article><h2>Page de commande</h2>
+          
+    <form  action="./confirmation.html" method = "get" id="order-form">
+      <section class="champ">
+        <h3>Contact</h3>
+        <div class="colonnes">
+        <div>
+        <label for="first-name">Prénom</label><br>
+        <input class="form-control" type="text" id="first-name" name="Prénom" required >
+        <br><br>
+        <label for="email">Adresse Courriel</label><br>
+        <input class="form-control" type="email" id="email" name="Adresse Courriel" required><br>
+        </div>
+        <div>
+          <div>
+            <label for="last-name">Nom</label><br>
+            <input class="form-control" type="text" id="last-name" name="Nom" required ><br><br>
+
+            <label for="phone">Numéro de téléphone</label><br>
+            <input class="form-control" type="tel" id="phone" name="Numéro de téléphone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="514-555-5555" required>
+          </div>
+        </div>
+      </section>
+      
+      <section class="champ" >        
+        <h3 >Paiement</h3>
+        <div class="colonnes">
+        <div>
+        <label for="credit-card">Numéro de carte de crédit</label><br>
+        <input class="form-control" type="text" id="creditcard" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" placeholder="0000 0000 0000 0000" required><br>
+        </div>
+        <div>
+        <label for="credit-card-expiry">Date d'expiration de la carte</label><br>
+        <input class="form-control" type="text" name="Date d'expiration de la carte" id="credit-card-expiry"  placeholder="mm/aa" required><br>
+        </div>
+        </div>
+      </section> 
+      <br>      
+     <input class="commander btn" type="submit" value="Payer" >
+    </form>
+
+
+    
+  </article>
+ </main>
+
+
+ <footer>
+  <p>Agudelo Campo Alejandro Jhosim 20252200</p>
+ </footer>
+</body>
+
+
+</html>

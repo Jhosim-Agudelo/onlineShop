@@ -1,0 +1,373 @@
+/* Jhosim Alejandro Agudelo Campo*/
+/* 3.1 entête*/
+
+.contenu {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+header  {
+    background-color: #14597f;
+    height: 60px;
+    border-bottom: solid 1px;
+    border-color: #0b2d3d;
+    
+}
+/* Logo*/
+header img {
+    height: 60px;
+}
+/* éléments de navigation */
+header li  {
+    display: inline;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+li.active{
+    background-color: #1fb5e9;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+}
+
+header nav {
+    text-align: right;
+    position: relative;
+    bottom: 70px;
+}
+
+header span i{
+   color: #14597f;
+   text-decoration: none;
+}
+ 
+
+.count{
+    background-color:#d9534f;
+    vertical-align: bottom;
+    text-align: right;
+    position: relative;
+    padding: 1px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 25px;
+    right: 17px
+
+}
+
+
+/* 3.2 Pied de page*/
+/* sticky footer inspiré du site https://css-tricks.com/couple-takes-sticky-footer/ 
+titre:Sticky Footer, Five Ways auteur: Chris Coyier, updated on jan 29,2020, 
+Section: There is flexbox
+*/
+footer {
+    height: 70px;
+    text-align: center;
+    background-color: #eeeeee;
+    border-top: solid 1px;
+    border-color: #cccccc;
+    flex-shrink: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* 3.3 Page d'acceuil */
+
+#imageindex   {
+    float: right;
+    height: 400px;
+    position: relative;
+    bottom: 110px;
+}
+
+.btn  {
+    border: solid 1px;
+    background-color: #14597f;
+    border-color: #0b2d3d;  
+    border-radius: 4px;  
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnspecial{
+    border: solid 1px;
+    background-color: #14597f;
+    border-color: #0b2d3d;  
+    border-radius: 4px;  
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.btnspecial:hover{
+    background-color: #1fb5e9;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #1fb5e9;
+    transition: 0.2s;
+}
+/* 3.4 produits */
+
+.separation  {
+    display: grid;
+    grid-template-columns: 25% 100%;
+    
+}
+
+/* 3.4.1 Barre laterale */
+aside{
+    width: 95%;
+}
+
+aside button {
+    border: solid 1px;
+    border-color: #999999;
+    border-radius: 4px ;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    background-color: white;
+    
+
+}
+
+aside button:hover {
+    background-color: #f3f3f3;
+    transition: 0.2s;
+}
+
+button.selected {
+    background-color: #ddf2fb;
+}
+
+/* 3.4.2 Panneau principal */
+section.principal p {
+    text-align: right;
+    position: relative;
+    right: 40px;
+    bottom: 40px;
+}
+.principal  {
+    max-width: 75%;
+}
+
+section.principal li {
+    display: inline;
+}
+
+section.principal img {
+    height: 150px;
+}
+
+.produits{
+    float: left;
+    border: solid 1px;
+    border-color: #999999 ;
+    width: 250px;
+    margin: 10px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.produits:hover{
+    background-color: #f3f3f3;
+    transition: 0.2s;
+}
+
+section.principal a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* 3.5 produit */
+
+.colonnes {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+
+#add-to-cart-form {
+    text-align: right;
+    position: relative;
+    bottom: 45px;
+}
+
+.form-control {
+    border: solid 1px;
+    border-color: #999999;
+    border-radius: 4px;
+    width: 40px;
+    padding: 10px;
+    padding-bottom: 13px;
+    margin-left: 5px;
+
+}
+
+hr {
+    border: 1px dashed;
+}
+/* 3.6 contact */
+.troiscolonnes {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: #999999;
+
+}
+
+
+.formation {
+    text-align: center;
+}
+
+.formation a {
+    text-decoration: none;
+}
+
+
+
+/* 3.7 page du panier d'achats */
+
+
+table {
+    width: 100%;
+    border-bottom: solid 1px;
+    border-collapse: collapse;
+}
+
+
+th {
+    text-align: left;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
+
+/* Specification des colonnes */
+.firstcollumn {
+    text-align: center;
+    max-width: 30px;
+    width: 30px;
+}
+
+
+.secondcollumn {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.thirdcollumn{
+    word-spacing: 5px;
+}
+
+.lastcollumn {
+    text-align: right;
+}
+/* specification texte*/
+td a{
+    text-decoration: none;
+    color: #377ebd;
+}
+
+/* boutons */
+table input {
+    background-color: #dddddd;
+    border-radius: 35px;
+    padding-right: 4px;
+}
+
+table input:hover {
+    background-color: #bbbbbb;
+
+}
+
+.input- {
+    border-radius: 35px;
+    padding-right: 7px;
+    padding-left: 6px;
+}
+
+.inputx {
+    border-radius: 35px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Allignement  */
+.prix {
+    text-align: right;
+}
+
+.vider{
+    text-align: left;
+}
+
+.commander {
+    float: right;
+}
+
+
+.elevate {
+    position: relative;
+    bottom: 38px;
+}
+
+/* 3.8 page commande */
+/* Utilisation des classes antérieur */
+/* espacement des champs */
+section.champ input {
+    width: 95%;
+}
+
+/* Choix de couleur des messages d'erreurs */
+
+.error{
+    color: red;
+    padding-left: 5px;
+}
+
+#dialog{
+    display: none;
+    position: fixed;
+    z-index: 0-1;
+    left: 50%;
+    top: 88%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    
+
+}
+
+.quantite div{
+    display: inline;
+    
+}
