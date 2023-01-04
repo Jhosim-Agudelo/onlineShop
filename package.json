@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "nodemon --ignore ./data/ ./server.js",
+    "lint": "eslint ./"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
